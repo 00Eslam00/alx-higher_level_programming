@@ -10,7 +10,7 @@
 int is_palindrome(listint_t **head)
 {
     listint_t *aux = *head;
-    int i = 0, j = 0, k = 0, l = 0;
+    int i = 0, j = 0, k = 0;
     int *array = NULL;
 
     if (head == NULL)
@@ -30,9 +30,9 @@ int is_palindrome(listint_t **head)
         aux = aux->next;
         j++;
     }
-    for (k = 0, l = i - 1; k < l; k++, l--)
+    for (k = 0; k <= (i) / 2; k++)
     {
-        if (array[k] != array[l])
+        if (array[k] != array[i-1-k])
         {
             free(array);
             return (0);
