@@ -7,3 +7,4 @@ def safe_print_integer_err(value):
         import sys
         print("Exception: {}".format(err), file=sys.stderr)
         return False
+print(list(range(10, 0, -2)))
