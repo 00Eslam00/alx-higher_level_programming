@@ -59,3 +59,10 @@ class TestMaxInteger(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class User:
+    id = 1
+
+u = User()
+User.id = 98
+print(u.id)
